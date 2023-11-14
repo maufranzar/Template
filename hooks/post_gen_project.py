@@ -10,4 +10,4 @@ subprocess.call(['git', 'init'])
 subprocess.call(['git', 'status'])
 subprocess.call(['git', 'lg'])
 
-print(f"{MESSAGE_COLOR} :v {RESET_ALL}")
+print(f"{MESSAGE_COLOR} powered by {RESET_ALL}")
