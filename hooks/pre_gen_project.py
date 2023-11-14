@@ -9,6 +9,7 @@ MESSAGE_COLOR = "\x1b[34m"
 RESET_ALL = "\x1b[0m"
 
 print(f'{MESSAGE_COLOR}Comprobando Actualizaciones en GitHub')
+subprocess.call(['git', 'init'])
 subprocess.call(['git', 'remote', "-v", "show", "origin"])
 
 print(f'{MESSAGE_COLOR}Iniciando Entorno...')
