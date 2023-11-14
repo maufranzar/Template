@@ -6,5 +6,5 @@ RESET_ALL = "\x1b[0m"
 subprocess.call(['tree'])
 
 print(f"{MESSAGE_COLOR}Almost done!")
-print("Actualiazndo Repositorio desde GitHub :D")
-print(f"{MESSAGE_COLOR} powered by {RESET_ALL}")
+print("Sincronizando con GitHub :D")
+print(f"{MESSAGE_COLOR}try: conda env create --file environment.yml {RESET_ALL}")
