@@ -1,6 +1,6 @@
 {
     "project_tittle": "PhF",
-    "project_slug": "{{ cookiecutter.project_title.lower().replace(' ', '_') }}",
+    "project_slug": "{{ cookiecutter.project_tittle.lower().replace(' ','_') }}",
     "project_description": "Generando Frecuencias Cheveres",
     "project_author_name": "maufranzar",
     "project_packages": ["All", "Minimal"],
