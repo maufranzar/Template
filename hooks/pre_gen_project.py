@@ -8,11 +8,10 @@ ERROR_COLOR = "\x1b[31m" # To change the terminal color
 MESSAGE_COLOR = "\x1b[34m"
 RESET_ALL = "\x1b[0m"
 
-print(f'{MESSAGE_COLOR}Iniciando Entorno...')
+print(f'{MESSAGE_COLOR}Comprobando Actualizaciones en GitHub')
+subprocess.call(['git', 'remote', "-v", "show", "origin"])
 
-subprocess.call(['git', 'init'])
-subprocess.call(['git', 'status'])
-subprocess.call(['git', 'pull', 'origin', 'Data'])
+print(f'{MESSAGE_COLOR}Iniciando Entorno...')
 
 if project_slug.startswith("x"):
     print(f'{ERROR_COLOR}ERROR: {project_slug=} is not a valid name for this template.{RESET_ALL}')
