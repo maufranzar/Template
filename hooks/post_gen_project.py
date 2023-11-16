@@ -14,5 +14,5 @@ print(f"{MESSAGE_COLOR}First Commit{RESET_ALL}")
 subprocess.call(['git', 'commit', '-m', '"First Commit!"'])
 print(f'{ERROR_COLOR} Try to configure Git!{RESET_ALL}')
 
-print(f"{MESSAGE_COLOR}Now, create your environment:
-      conda env create --file environment.yml {RESET_ALL}")
+print(f"{MESSAGE_COLOR}Now, create your environment:{RESET_ALL}")
+print(f'conda env create --file environment.yml {RESET_ALL}')
