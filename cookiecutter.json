@@ -1,5 +1,5 @@
 {
-    "project_tittle": "PhF",
+    "project_tittle": "",
     "project_slug": "{{ cookiecutter.project_tittle.lower().replace(' ','_') }}",
     "project_author_name": "maufranzar",
     "project_author_email": "",

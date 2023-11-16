@@ -10,12 +10,14 @@ dependencies:
   - jupyter
   - jupyterlab
   - pathlib
-  {% endif -%}
-  - pip
-  {% if cookiecutter.project_packages == "All" -%}
   - pyprojroot
-  {% endif -%}
   - python={{ cookiecutter.python_version }}
+  - matplotlib
+  - seaborn
+  - pandas
+  - numpy
+  - pip
+  {% endif -%}
   - pip:
     {% if cookiecutter.project_packages == "All" -%}
     - pyhere
