@@ -1,9 +1,5 @@
 # {{ cookiecutter.project_tittle}}
 
-By : {{ cookiecutter.project_author_name }}
+## By : {{ cookiecutter.project_author_name }}
 
-email: {{ cookiecutter.project_author_email }}
-
-{{ cookiecutter.project_description }}
-
-## License
+## {{ cookiecutter.project_description }}

@@ -1,10 +1,9 @@
 {
-    "project_tittle": "",
+    "project_tittle": "Mau Test",
     "project_slug": "{{ cookiecutter.project_tittle.lower().replace(' ','_') }}",
     "project_author_name": "maufranzar",
-    "project_author_email": "",
-    "project_description": "",
-    "project_packages": ["all", "minimal"],
+    "project_description": "Default Template",
+    "project_packages": ["All", "Minimal"],
     "python_version": "3.11",
     "project_version": "0.1.0"
 }
