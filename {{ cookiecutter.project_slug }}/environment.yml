@@ -6,16 +6,15 @@ channels:
   - defaults
 dependencies:
   {% if cookiecutter.project_packages == "All" -%}
-  - fs
-  - jupyter
-  - jupyterlab
-  - pathlib
-  - pyprojroot
   - python={{ cookiecutter.python_version }}
+  - numpy
+  - pandas
   - matplotlib
   - seaborn
-  - pandas
-  - numpy
+  - jupyter
+  - jupyterlab
+  - fs
+  - pathlib
   - pip
   {% endif -%}
   - pip:
