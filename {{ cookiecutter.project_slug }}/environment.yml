@@ -9,12 +9,15 @@ dependencies:
   - python={{ cookiecutter.python_version }}
   - numpy
   - pandas
+  - xlrd
   - matplotlib
   - seaborn
+  - plotly
   - jupyter
   - jupyterlab
   - fs
   - pathlib
+  - scikit-learn
   - pip
   {% endif -%}
   - pip:
