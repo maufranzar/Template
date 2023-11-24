@@ -1,6 +1,42 @@
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
+reports/*.html
+reports/*.pdf
+reports/*.docx
+reports/*.xlsx
+reports/*.ipynb
+reports/*.Rmd
+reports/*.R
+
+# Jupyter Notebook generated html
+*.nbconvert.html
+
+# Jupyter Notebook generated pdf
+*.nbconvert.pdf
+
+# Jupyter Notebook generated Markdown
+*.nbconvert.md
+
+# Jupyter Notebook generated reStructuredText
+*.nbconvert.rst
+
+# Jupyter Notebook generated LaTeX
+*.nbconvert.tex
+
+# Ignore ipython checkpoints
+.ipynb_checkpoints/*
+*/.ipynb_checkpoints/*
+*/*/.ipynb_checkpoints/*
+*/*/*/.ipynb_checkpoints/*
+*/*/*/*/.ipynb_checkpoints/*
+*/*/*/*/*/.ipynb_checkpoints/*
+*/*/*/*/*/*/.ipynb_checkpoints/*
+*/*/*/*/*/*/*/.ipynb_checkpoints/*
+*/*/*/*/*/*/*/*/.ipynb_checkpoints/*
+*/*/*/*/*/*/*/*/*/.ipynb_checkpoints/*
+*/*/*/*/*/*/*/*/*/*/.ipynb_checkpoints/*
+*/*/*/*/*/*/*/*/*/*/*/.i
 
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
