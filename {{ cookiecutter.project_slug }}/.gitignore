@@ -195,3 +195,8 @@ poetry.toml
 
 # LSP config files
 pyrightconfig.json
+
+# Local directory
+data/external/*
+data/raw/*
+reports/img/*
