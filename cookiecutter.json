@@ -1,9 +1,8 @@
 {
-    "project_tittle": "Proyecto Chevere",
+    "project_tittle": "Nombre del Proyecto",
     "project_slug": "{{ cookiecutter.project_tittle.lower().replace(' ','_') }}",
     "project_author_name": "maufranzar",
-    "project_description": "Analizando Data",
-    "project_packages": ["All", "Minimal"],
+    "project_description": "Descipcion",
     "python_version": "3.11",
     "project_version": "0.1.0"
 }

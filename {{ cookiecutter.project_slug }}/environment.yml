@@ -1,11 +1,13 @@
 # conda env create --file environment.yml
+
 name: {{ cookiecutter.project_slug }}
 channels:
   - anaconda
   - conda-forge
   - defaults
+
 dependencies:
-  {% if cookiecutter.project_packages == "All" -%}
+  
   - python={{ cookiecutter.python_version }}
   - numpy
   - pandas
@@ -18,16 +20,8 @@ dependencies:
   - scipy
   - jupyter
   - jupyterlab  
-  - jupyterlab-plotly
-  - jupyterlab-kernelspy
-  - jupyterlab-topbar
-  - jupyterlab-theme-toggle
+  - pyhere
+  - keras
+  - tensorflow
+  - pytorch
   - pip
-  {% endif -%}
-  - pip:
-    {% if cookiecutter.project_packages == "All" -%}
-    - pyhere
-    - keras
-    - tensorflow
-    - pytorch
-    {% endif -%}
