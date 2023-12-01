@@ -9,18 +9,25 @@ dependencies:
   - python={{ cookiecutter.python_version }}
   - numpy
   - pandas
-  - xlrd
   - matplotlib
   - seaborn
   - plotly
-  - jupyter
-  - jupyterlab
   - fs
   - pathlib
   - scikit-learn
+  - scipy
+  - jupyter
+  - jupyterlab  
+  - jupyterlab-plotly
+  - jupyterlab-kernelspy
+  - jupyterlab-topbar
+  - jupyterlab-theme-toggle
   - pip
   {% endif -%}
   - pip:
     {% if cookiecutter.project_packages == "All" -%}
     - pyhere
+    - keras
+    - tensorflow
+    - pytorch
     {% endif -%}
