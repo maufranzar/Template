@@ -1,29 +1,45 @@
-# conda env create --file environment.yml
-
 name: {{ cookiecutter.project_slug }}
 channels:
   - anaconda
   - conda-forge
   - defaults
-
 dependencies:
-  
+  - black
+  - invoke
+  - jupyter
+  - jupyterlab
+  {% if cookiecutter.project_packages == "All" -%}
+  - keras
+  - lightgbm
+  {% endif -%}
+  - matplotlib
+  {% if cookiecutter.project_packages == "All" -%}
+  - missingno
+  {% endif -%}
+  - nbdime
+  - numpy
+  - pandas
+  {% if cookiecutter.project_packages == "All" -%}
+  - pandas-flavor
+  - pandas-profiling
+  {% endif -%}
+  - pip
+  - plotly
+  - pyjanitor
+  {% if cookiecutter.project_packages == "All" -%}
+  - pylint
+  {% endif -%}
+  - pyprojroot
+  {% if cookiecutter.project_packages == "All" -%}
+  - pyspark
+  {% endif -%}
   - python={{ cookiecutter.python_version }}
-  - numpy=latest
-  - pandas=latest
-  - matplotlib=latest
-  - seaborn=latest
-  - plotly=latest
-  - fs=latest
-  - pathlib=latest
-  - scikit-learn=latest
-  - scipy=latest
-  - jupyter=latest
-  - jupyterlab=latest
-  - keras=latest
-  - tensorflow=latest
-  - pytorch=latest
-  - pip=latest
-
-  - pip:
-    - pyhere=latest
+  {% if cookiecutter.project_packages == "All" -%}
+  - python-dotenv
+  - scikit-learn
+  {% endif -%}
+  - seaborn
+  {% if cookiecutter.project_packages == "All" -%}
+  - statsmodels
+  - tensorflow
+  {% endif -%}
