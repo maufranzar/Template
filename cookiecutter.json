@@ -2,7 +2,7 @@
     "project_tittle": "Nombre del Proyecto",
     "project_slug": "{{ cookiecutter.project_tittle.lower().replace(' ','_') }}",
     "project_author_name": "maufranzar",
-    "project_description": "Descipcion",
+    "project_description": "Desciption",
     "python_version": "3.11",
-    "project_version": "0.1.0"
+    "project_version": "0.1"
 }

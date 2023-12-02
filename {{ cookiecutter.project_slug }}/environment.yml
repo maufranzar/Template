@@ -9,19 +9,21 @@ channels:
 dependencies:
   
   - python={{ cookiecutter.python_version }}
-  - numpy
-  - pandas
-  - matplotlib
-  - seaborn
-  - plotly
-  - fs
-  - pathlib
-  - scikit-learn
-  - scipy
-  - jupyter
-  - jupyterlab  
-  - pyhere
-  - keras
-  - tensorflow
-  - pytorch
-  - pip
+  - numpy=latest
+  - pandas=latest
+  - matplotlib=latest
+  - seaborn=latest
+  - plotly=latest
+  - fs=latest
+  - pathlib=latest
+  - scikit-learn=latest
+  - scipy=latest
+  - jupyter=latest
+  - jupyterlab=latest
+  - keras=latest
+  - tensorflow=latest
+  - pytorch=latest
+  - pip=latest
+
+  - pip:
+    - pyhere=latest
