@@ -4,8 +4,13 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - black
-  - invoke
+  - python={{ cookiecutter.python_version }}
+  - numpy
+  - pandas
+  {% if cookiecutter.project_packages == "All" -%}
+  - pandas-flavor
+  - pandas-profiling
+  {% endif -%}
   - jupyter
   - jupyterlab
   {% if cookiecutter.project_packages == "All" -%}
@@ -13,16 +18,11 @@ dependencies:
   - lightgbm
   {% endif -%}
   - matplotlib
+  - seaborn
   {% if cookiecutter.project_packages == "All" -%}
   - missingno
   {% endif -%}
   - nbdime
-  - numpy
-  - pandas
-  {% if cookiecutter.project_packages == "All" -%}
-  - pandas-flavor
-  - pandas-profiling
-  {% endif -%}
   - pip
   - plotly
   - pyjanitor
@@ -33,12 +33,9 @@ dependencies:
   {% if cookiecutter.project_packages == "All" -%}
   - pyspark
   {% endif -%}
-  - python={{ cookiecutter.python_version }}
   {% if cookiecutter.project_packages == "All" -%}
-  - python-dotenv
   - scikit-learn
   {% endif -%}
-  - seaborn
   {% if cookiecutter.project_packages == "All" -%}
   - statsmodels
   - tensorflow

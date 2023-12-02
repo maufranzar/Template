@@ -1,8 +1,11 @@
+# conda env create -f environment.yml
+
 name: mau_env
 channels:
+  - anaconda
   - conda-forge
   - defaults
 dependencies:
-  - cookiecutter=2.4.0
+  - cookiecutter
   - python=3.11
 prefix: /home/mau/anaconda3/envs/mau
