@@ -10,6 +10,7 @@ dependencies:
   {% if cookiecutter.project_packages == "All" -%}
   - pandas-flavor
   - pandas-profiling
+  - pandas-openpyxl
   {% endif -%}
   - jupyter
   - jupyterlab
@@ -22,10 +23,12 @@ dependencies:
   {% if cookiecutter.project_packages == "All" -%}
   - missingno
   {% endif -%}
-  - nbdime
+  - scipy
+  - joblib
   - pip
   - plotly
   - pyjanitor
+  - imbalanced-learn
   {% if cookiecutter.project_packages == "All" -%}
   - pylint
   {% endif -%}
@@ -39,4 +42,9 @@ dependencies:
   {% if cookiecutter.project_packages == "All" -%}
   - statsmodels
   - tensorflow
+  - category-encoders
+  - yellowbrick
+  - chart-studio
   {% endif -%}
+  
+  
