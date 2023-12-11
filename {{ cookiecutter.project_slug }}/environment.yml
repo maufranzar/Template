@@ -45,6 +45,11 @@ dependencies:
   - category-encoders
   - yellowbrick
   - chart-studio
+  - dvc
+  - dvc[gdrive]
+  - fastapi
+  - uvicorn
+  - gunicorn
   {% endif -%}
   
   
