@@ -50,6 +50,8 @@ dependencies:
   - fastapi
   - uvicorn
   - gunicorn
+  - pytest
+  - httpx
   {% endif -%}
   
   
